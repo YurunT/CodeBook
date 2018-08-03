@@ -1,4 +1,88 @@
-<!DOCTYPE html>
-<html>
-<h1>hello <%= name %></h1>
-</html>
+<% include head.ejs %>
+<body>
+    <div class="nav">
+        <h1>hello <%= name %></h1>
+        <a href="/add_account">Add a new account</a>
+    </div>
+
+    <div class="show_code_list">
+        <table id="table"
+               data-toggle="table"
+               data-pagination="true"
+               data-search="true"
+               data-toolbar="#toolbar"
+               data-click-to-select="true">
+            <thead>
+            <tr>
+                <th data-field="state" data-checkbox="true"></th>
+                <th data-field="id">ID</th>
+                <th data-field="platform">Platform</th>
+                <th data-field="account">Account</th>
+                <th data-field="code">Code</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr data-index="0" data-checkbox="true">
+                    <td align="center"><input name="btSelectItem" type="checkbox"></td>
+                    <td>1</td>
+                    <td>QQ</td>
+                    <td>944658799</td>
+                    <td>0123456789a</td>
+                </tr>
+                <tr data-index="1">
+                    <td align="center"><input name="btSelectItem" type="checkbox" ></td>
+                    <td>2</td>
+                    <td>Wechat</td>
+                    <td>asr_ti</td>
+                    <td>19960129tandferg</td>
+                </tr>
+                <tr data-index="2">
+                    <td align="center"><input name="btSelectItem" type="checkbox" ></td>
+                    <td>3</td>
+                    <td>Weibo</td>
+                    <td>huahua</td>
+                    <td>fafwfrhycxse</td>
+                </tr>
+            </tbody>
+        </table>
+        <div><button id="del">Delete Account</button></div>
+    </div>
+    <script>
+        var $table = $('#table'),
+            $button = $('#del');
+
+        $(function() {
+            $button.click(function () {
+
+
+                var ids = $.map($table.bootstrapTable('getSelections'), function (row) {
+                    return row.id;
+                });
+
+                console.log(ids);
+
+                if(ids.length==0){
+                    console.log("0 items selected!")
+                    alert(
+                             "Please select items to remove."
+                    );
+                    return;
+                }
+
+                var cfrm=confirm("Are you sure to remove "+ids.length + "items selected?");
+                if (cfrm==true){
+                    console.log(ids);
+
+                    $table.bootstrapTable('remove', {
+                        field: 'id',
+                        values: ids
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+
+
+<% include footer.ejs %>
