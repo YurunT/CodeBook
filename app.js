@@ -4,6 +4,8 @@ var favicon = require('static-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var session=require('express-session');
+
 
 var routes = require('./routes/index');
 //var users = require('./routes/users');
@@ -22,6 +24,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+
 
 //app.use('/', routes);
 //app.use('/users', users);
@@ -47,6 +51,20 @@ if (app.get('env') === 'development') {
         });
     });
 }
+
+var sess={
+    name:'testapp',
+    secret: '12345',
+    saveUninitialized: true,
+    resave: false,
+    cookie: {}
+}
+
+app.use(session(sess));
+app.use(function(req, res, next){
+    res.locals.session = req.session;
+    next();
+});
 
 // production error handler
 // no stacktraces leaked to user
