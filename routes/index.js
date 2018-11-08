@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+// var userTest=require('./userTest');
 
 /* GET home page. */
 
@@ -14,7 +15,7 @@ module.exports = function (app) {
         console.log("username: "+username);
         console.log("password: "+password);
         console.log("email: "+email);
-        res.render('index.ejs', { title: 'success' });
+        res.render('index.ejs', { title: 'fail' });
     })
 
     app.post('/userIndex',function (req,res) {
@@ -23,6 +24,7 @@ module.exports = function (app) {
         console.log('password (from visible form field): ' + req.body.password);
         res.render('userIndex.ejs',{ name: req.body.username });
     });
+
     app.post('/add_account',function (req,res){
 
         var selectPlatform=req.body.select_;
@@ -41,6 +43,20 @@ module.exports = function (app) {
         console.log('Account: '+account);
         console.log('code: '+code);
     });
+    app.post('/register',function (req,res) {
+        var username=req.body.username;
+        var password_login=req.body.password;
+        var password_status=req.body.rpassword;
+        // UserExist = userTest.register(username,password_login,password_status)
+        if (true){
+            res.render('index.ejs', { title: 'success' });
+            console.log("sign up successfully!");
+        }else{
+            res.render('index.ejs', { title: 'existed' });
+            console.log("account already existed!");
+        }
+    });
+
 
 
 }

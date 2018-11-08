@@ -23,7 +23,9 @@ $(document).ready(function() {
                 minlength: 5
             },
             rpassword: {
-                equalTo: "#register_password"
+                // equalTo: "#register_password"
+                required: true,
+                minlength: 5
             },
             email: {
                 required: true,
