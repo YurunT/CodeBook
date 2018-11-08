@@ -21,33 +21,22 @@
                     <th data-field="code">Code</th>
                 </tr>
                 </thead>
-                <tbody>
-                <tr data-index="0" data-checkbox="true">
-                    <td align="center"><input name="btSelectItem" type="checkbox"></td>
-                    <td>1</td>
-                    <td>QQ</td>
-                    <td>944658799</td>
-                    <td>0123456789a</td>
-                </tr>
-                <tr data-index="1">
-                    <td align="center"><input name="btSelectItem" type="checkbox" ></td>
-                    <td>2</td>
-                    <td>Wechat</td>
-                    <td>asr_ti</td>
-                    <td>19960129tandferg</td>
-                </tr>
-                <tr data-index="2">
-                    <td align="center"><input name="btSelectItem" type="checkbox" ></td>
-                    <td>3</td>
-                    <td>Weibo</td>
-                    <td>huahua</td>
-                    <td>fafwfrhycxse</td>
-                </tr>
-                </tbody>
+
+                    <tbody>
+                        <% for (i  in accountList){%>
+                        <tr data-index=<% i %> data-checkbox="true">
+                            <td align="center"><input name="btSelectItem" type="checkbox"></td>
+                            <td><% 1 %></td>
+                            <td><%= i.account_type %></td>
+                            <td><%= i.account %></td>
+                            <td><%= i.password %></td>
+                        </tr>
+                        <%}%>
+                    </tbody>
             </table>
         </div>
         <div>
-            <button id="del" >Delete selected Accounts</button>
+            <button id="del">Delete selected Accounts</button>
         </div>
     </div>
 
@@ -92,6 +81,8 @@
                 <div>
                     <input type="submit"  value="Submit" />
                 </div>
+                    <input name="name" hidden value="<%=name%>">
+                    <input name="password" hidden value="<%=password%>">
 
             </form>
         </div>

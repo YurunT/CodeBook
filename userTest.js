@@ -5,24 +5,23 @@ var web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
 
 
 //这个地址来自于user合约部署后的得到的地址，每次重新部署的时候，地址是不一样的。
-var useraddress = "0xf474829afcd85a6005b9b91b69cc767aadc21093";
+var useraddress = "0x8258825e2909668824da6bdcd95dac9e7463ae8a";
 var userContract = web3.eth.contract([{"constant":false,"inputs":[{"name":"name","type":"string"},{"name":"info_address","type":"address"},{"name":"password","type":"string"}],"name":"set","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"name","type":"string"},{"name":"password","type":"string"}],"name":"login","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"name","type":"string"},{"name":"password","type":"string"}],"name":"del","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"name","type":"string"}],"name":"getAddress","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"name","type":"string"},{"name":"password","type":"string"},{"name":"new_password","type":"string"}],"name":"changePassword","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"}]);
 
 
 
 //--------------函数使用例子--------------------
-// //console.log(getAddress("myy1"));
-//var test1 = register("myy2","myy2","myy2");
-// console.log(test1);
+//console.log(getAddress("myy1"));
+var test1 = register("myy2","myy2","myy2");
+console.log(test1);
 //console.log(login("myy2","myy2"));
 //console.log(getAddress("myy1"));
 //addAccount("myy15","myy53","myy53","myy53");
-var test1=addAccount("myy2","1111111","66666","qq");
-console.log(test1);
+//addAccount("myy1","myy1","myy11","myy11");
 //addAccount("myy8","myy7","myy7","myy7");
 //changePassword("myy1","myy1","newmyy1");
 //delAccount("myy2",2,"myy2");
-//queryAccountList("tyr1","123456");
+//queryAccountList("myy1","myy1");
 //console.log(login("myy2","myy2"));
 //----------------------------------------------
 
@@ -59,7 +58,7 @@ function register(userName, password, status_password){
 						console.log("交易hash：" + transactionHash);
 						console.log(login(userName,password));
 						console.log("注册完成");
-						//addAccount(userName,"","",""); //第一个账号总是添加不成功，原因没找出来
+						addAccount(userName,"","",""); //第一个账号总是添加不成功，原因没找出来
 						return true;
 					}else{
 						return false;
@@ -70,7 +69,6 @@ function register(userName, password, status_password){
 	    	return false;
 	    }
 	 })
-	 console.log("sign up执行完毕");
 }
 
 //注销用户的函数，执行完之后，用户的合约地址和密码会被删除
@@ -150,13 +148,10 @@ function addAccount(userName,account,password,account_type){
 									//queryAccountList("myy9","myy9");
 
 								}
-							}
-						);
-						console.log("trueeeeee")
+				}
+			);
 						return true;
-
 					}else{
-						console.log("falseeeee")
 						return false;
 					}
 				}
@@ -195,23 +190,12 @@ function delAccount(userName,index,status_password){
  	var user_detail = detailsContract.at(address);
  	var count = parseInt(user_detail.getCount.call());
  	for(var i = 1; i< count;i++){
-		 var temp = user_detail.getAccount.call(i,password);
- 		list[i] = {"account":temp[0],"password":temp[0],"account_type":temp[0]};
+ 		var temp = user_detail.getAccount.call(i,password);
+ 		list[i] = temp;
  	}
  	console.log(list);
 
  }
-
- module.exports = {
-	register,
-	del,
-	login,
-	changePassword,
-	getAddress,
-	addAccount,
-	delAccount,
-	queryAccountList,
-  }
 
 
 

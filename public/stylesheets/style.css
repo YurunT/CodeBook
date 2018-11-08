@@ -1,6 +1,7 @@
 body {
-  padding: 50px;
+
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    width: 100%; line-height: 1.3em;background:url(https://portali.hku.hk/cas-login/inner-bg.jpg) repeat-x 0 0 #caf3f7;
 }
 
 a {
@@ -8,4 +9,257 @@ a {
 }
 
 #register_div {display:none;}
-#login_div {display: block;}
+#login_div {display: block;
+    margin-top:5%;
+    text-align:center;
+}
+.form-control {
+    width: 20%;
+    height: 42px;
+    text-indent: 2.5rem;
+    margin-bottom: 20px;
+}
+.form-title{
+    font-size: 20px;
+    font-family: 微软雅黑;
+    color: rgb(98,94,91);
+    margin-bottom:25px;
+
+}
+body p{
+    color: transparent;
+    background-color : black;
+    text-shadow : rgba(255,255,255,0.5) 0 5px 6px, rgba(255,255,255,0.2) 1px 3px 3px;
+    -webkit-background-clip : text;
+
+
+}
+
+.checkbox{
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(98,94,91);
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+
+}
+.checkbox input{
+    width: 16px;
+    height: 16px;
+    vertical-align: super;
+    margin-right: 12px;
+
+}
+
+
+.form-group .btn-success {
+    width: 20%;
+    height: 45px;
+    background-color: #ee7700;
+    border: none;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+
+
+
+.container_header {
+    width:40%;
+    margin-top:5%;
+
+
+
+}
+.row {
+    position: relative;
+    height: 50px;
+    z-index: 1;
+    clear: both;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.row--intro {
+    padding-top: 20px;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+    color: #fff;
+    opacity: 0.4;
+}
+.row--intro span {
+    font-size: 11px;
+}
+.skew-title {
+    font-size: 25px;
+}
+.skew-title span {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 50px;
+    margin: auto;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    font-family: 'roboto condensed';
+    font-weight: 700;
+    font-size: 35.714285714285715px;
+    line-height: 50px;
+    -webkit-transform: skewY(-15deg);
+    transform: skewY(-15deg);
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    transition: all 0.2s;
+    cursor: default;
+}
+.skew-title span:after,
+.skew-title span:before {
+    display: block;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 50px;
+    position: absolute;
+    background: #185a81;
+    content: ' ';
+    z-index: -1;
+    transition: all 0.2s;
+}
+.skew-title span:before {
+    background: rgba(0,0,0,0.1);
+    -webkit-transform: skewY(15deg);
+    transform: skewY(15deg);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+.skew-title span:nth-child(even) {
+    background-color: #144c6e;
+    -webkit-transform: skewY(15deg);
+    transform: skewY(15deg);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    color: #d9d9d9;
+}
+.skew-title span:nth-child(even):after {
+    background-color: #144c6e;
+}
+.skew-title span:nth-child(even):before {
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+    -webkit-transform: skewY(-15deg);
+    transform: skewY(-15deg);
+}
+.skew-title span.flat {
+    -webkit-transform: skewY(0);
+    transform: skewY(0);
+    color: #fff;
+}
+.skew-title span.flat:before {
+    -webkit-transform: skewY(0);
+    transform: skewY(0);
+}
+.skew-title span.flat:nth-child(even):after {
+    background-color: #185a81;
+}
+.skew-title span.alt:after {
+    background-color: #b94a2c;
+}
+.skew-title span.alt:nth-child(even):after {
+    background-color: #9d3f25;
+}
+.skew-title span.alt.flat:nth-child(even):after {
+    background-color: #b94a2c;
+}
+
+#show_list{
+    width: 10%;
+    display:inline;
+    background:red;
+    margin-bottom: 10%;
+}
+#add_account{
+    width: 10%;
+    display:inline;
+    background:red;
+}
+#j134{
+    color:red;
+}
+
+#table {
+    width:100%;
+    margin:15px 0;
+    border:0;
+}
+#table th {
+    background-color:#C3E7FA;
+    color:#000000
+}
+#table,#table th,#table td {
+    font-size:0.95em;
+    text-align:center;
+    padding:4px;
+    border-collapse:collapse;
+}
+#table th,#table td {
+    border: 1px solid #dcf1fc;
+    border-width:1px 0 1px 0
+}
+#table tr {
+    border: 1px solid #dcf1fc;
+}
+#table tr:nth-child(odd){
+    background-color:#ebf7fd;
+}
+#table tr:nth-child(even){
+    background-color:#fdfdfd;
+}
+#del{
+    width: 15%;
+    height: 20px;
+    background-color: #00B7FF;
+    border: none;
+    color: white;
+    font-size: 8px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+#submitbutton{
+    width: 15%;
+    height: 20px;
+    background-color: #00B7FF;
+    border: none;
+    color: white;
+    font-size: 8px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+
+
+
+#j134{
+    font-size: 40px;
+    text-shadow: 5px 5px 5px black, 0px 0px 2px black;
+color: white;
+}
+input{
+    border: 1px solid #ccc;
+    padding: 7px 0px;
+    border-radius: 3px;
+    padding-left:5px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s
+}
+input:focus{
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+}
