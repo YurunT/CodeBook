@@ -26,7 +26,7 @@
     <session id="1473798296">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="18" />
+          <entry key="project.closed" value="19" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.28" value="3" />
@@ -39,36 +39,37 @@
           <entry key="project.open.time.40" value="1" />
           <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.7" value="4" />
-          <entry key="project.opened" value="23" />
+          <entry key="project.open.time.8" value="2" />
+          <entry key="project.opened" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="6" />
-          <entry key="ejs" value="53" />
-          <entry key="js" value="69" />
+          <entry key="ejs" value="54" />
+          <entry key="js" value="74" />
           <entry key="www" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="6" />
-          <entry key="EJS" value="53" />
-          <entry key="JavaScript" value="73" />
+          <entry key="EJS" value="54" />
+          <entry key="JavaScript" value="78" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="34" />
           <entry key="ejs" value="3517" />
-          <entry key="js" value="2586" />
+          <entry key="js" value="2631" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="34" />
           <entry key="EJS" value="3517" />
-          <entry key="JavaScript" value="2586" />
+          <entry key="JavaScript" value="2631" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -78,19 +79,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/for_userIndex.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="827">
-              <caret line="45" column="1" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="18" column="6" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+            <state relative-caret-position="696">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
             </state>
           </provider>
         </entry>
@@ -98,38 +90,19 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/userTest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="880">
-              <caret line="208" column="1" lean-forward="true" selection-start-line="208" selection-start-column="1" selection-end-line="208" selection-end-column="1" />
+            <state relative-caret-position="456">
+              <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/index.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/userIndex.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="624">
-              <caret line="50" column="14" lean-forward="true" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/userTest.js">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web3.js">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/public/javascripts/validateIndex.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="24">
+              <caret line="1" column="18" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="18" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -166,11 +139,11 @@
         <option value="$PROJECT_DIR$/views/head.ejs" />
         <option value="$PROJECT_DIR$/public/javascripts/userTest.js" />
         <option value="$PROJECT_DIR$/public/javascripts/for_index.js" />
-        <option value="$PROJECT_DIR$/routes/userTest.js" />
         <option value="$PROJECT_DIR$/views/index.ejs" />
-        <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/views/userIndex.ejs" />
         <option value="$PROJECT_DIR$/public/javascripts/for_userIndex.js" />
+        <option value="$PROJECT_DIR$/routes/index.js" />
+        <option value="$PROJECT_DIR$/routes/userTest.js" />
       </list>
     </option>
   </component>
@@ -191,10 +164,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="853" />
-    <option name="y" value="24" />
-    <option name="width" value="928" />
-    <option name="height" value="1056" />
+    <option name="x" value="65" />
+    <option name="y" value="-4" />
+    <option name="width" value="1855" />
+    <option name="height" value="1084" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -202,7 +175,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -235,6 +207,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -242,7 +215,7 @@
     <property name="last_opened_file_path" value="$USER_HOME$/桌面/js" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="vcs.Subversion" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -281,7 +254,10 @@
     </recent_temporary>
   </component>
   <component name="SvnConfiguration" cleanupOnStartRun="true">
-    <configuration>$USER_HOME$/.subversion</configuration>
+    <configuration useDefault="false">$USER_HOME$/.subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+    <option name="runUnderTerminal" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="true" />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -312,11 +288,13 @@
       <workItem from="1541333255775" duration="6333000" />
       <workItem from="1541590633008" duration="5795000" />
       <workItem from="1541643728723" duration="191000" />
+      <workItem from="1541644141316" duration="3135000" />
+      <workItem from="1541648537893" duration="45000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101165000" />
+    <option name="totallyTimeSpent" value="104345000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -328,9 +306,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20425996" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20425996" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -344,11 +322,31 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32984293" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.87434554" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.33717278" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20425996" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32984293" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.34450263" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32984293" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32984293" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.33717278" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -411,13 +409,6 @@
     <entry file="file://$PROJECT_DIR$/views/error.ejs">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/validateIndex.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="18" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/head.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -439,26 +430,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/for_userIndex.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="827">
-          <caret line="45" column="1" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/web3.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="18" column="6" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/userTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="880">
-          <caret line="208" column="1" lean-forward="true" selection-start-line="208" selection-start-column="1" selection-end-line="208" selection-end-column="1" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/userTest.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
@@ -467,18 +443,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/userIndex.ejs">
+    <entry file="file://$PROJECT_DIR$/public/javascripts/for_userIndex.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="50" column="14" lean-forward="true" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
+        <state relative-caret-position="533">
+          <caret line="45" column="1" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/userTest.js">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/views/userIndex.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="25" column="49" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="49" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web3.js">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="696">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/userTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/validateIndex.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="18" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

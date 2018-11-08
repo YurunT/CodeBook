@@ -24,6 +24,8 @@ module.exports = function (app) {
         console.log('password (from visible form field): ' + req.body.password);
         if(userTest.login(req.body.username,req.body.password)){
             var accountList = userTest.queryAccountList(req.body.username,req.body.password);
+            while(accountList == undefined){};
+            console.log("用户列表" +accountList[1].account_type);
             res.render('userIndex.ejs',{ name: req.body.username , accountList:accountList, password:req.body.password});
 
         }else{
@@ -51,8 +53,9 @@ module.exports = function (app) {
         console.log('Account: '+account);
         console.log('code: '+code);
         var result=userTest.addAccount(name,account,code,platform);
+        console.log("添加完成");
         if(true){
-            var accountList = userTest.queryAccountList(name,password);
+            var accountList = userTest.queryAccountList(name,"123456");
             res.render('userIndex.ejs',{ name: req.body.username , accountList:accountList});
         }else{
             console.log("add failed!");

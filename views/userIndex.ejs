@@ -23,13 +23,14 @@
                 </thead>
 
                     <tbody>
-                        <% for (i  in accountList){%>
+                        <% for (var i = 0  ;i<accountList.length;i++){%>
+                            <%if(accountList[i] == null) continue;%>
                         <tr data-index=<% i %> data-checkbox="true">
                             <td align="center"><input name="btSelectItem" type="checkbox"></td>
-                            <td><% 1 %></td>
-                            <td><%= i.account_type %></td>
-                            <td><%= i.account %></td>
-                            <td><%= i.password %></td>
+                            <td><%=i%></td>
+                            <td><%= accountList[i].account_type %></td>
+                            <td><%= accountList[i].account %></td>
+                            <td><%= accountList[i].password %></td>
                         </tr>
                         <%}%>
                     </tbody>
@@ -81,8 +82,7 @@
                 <div>
                     <input type="submit"  value="Submit" />
                 </div>
-                    <input name="name" hidden value="<%=name%>">
-                    <input name="password" hidden value="<%=password%>">
+                    <input name="name"  value="<%=name%>">
 
             </form>
         </div>

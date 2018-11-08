@@ -5,24 +5,24 @@ var web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
 
 
 //这个地址来自于user合约部署后的得到的地址，每次重新部署的时候，地址是不一样的。
-var useraddress = "0xf474829afcd85a6005b9b91b69cc767aadc21093";
+var useraddress = "0x94af18035b91eb0c7e66ef2a59c425ce191d4c39";
 var userContract = web3.eth.contract([{"constant":false,"inputs":[{"name":"name","type":"string"},{"name":"info_address","type":"address"},{"name":"password","type":"string"}],"name":"set","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"name","type":"string"},{"name":"password","type":"string"}],"name":"login","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"name","type":"string"},{"name":"password","type":"string"}],"name":"del","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"name","type":"string"}],"name":"getAddress","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"name","type":"string"},{"name":"password","type":"string"},{"name":"new_password","type":"string"}],"name":"changePassword","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"}]);
 
 
 
 //--------------函数使用例子--------------------
 // //console.log(getAddress("myy1"));
-//var test1 = register("myy2","myy2","myy2");
+//var test1 = register("myy","myy","myy");
 // console.log(test1);
 //console.log(login("myy2","myy2"));
 //console.log(getAddress("myy1"));
 //addAccount("myy15","myy53","myy53","myy53");
-var test1=addAccount("myy2","1111111","66666","qq");
-console.log(test1);
-//addAccount("myy8","myy7","myy7","myy7");
+//var test1=addAccount("myy2","1111111","66666","qq");
+//console.log(test1);
+addAccount("codebook","123456@163.com","123789456","邮箱");
 //changePassword("myy1","myy1","newmyy1");
 //delAccount("myy2",2,"myy2");
-//queryAccountList("tyr1","123456");
+//queryAccountList("tyr","123456");
 //console.log(login("myy2","myy2"));
 //----------------------------------------------
 
@@ -196,9 +196,9 @@ function delAccount(userName,index,status_password){
  	var count = parseInt(user_detail.getCount.call());
  	for(var i = 1; i< count;i++){
 		 var temp = user_detail.getAccount.call(i,password);
- 		list[i] = {"account":temp[0],"password":temp[0],"account_type":temp[0]};
+ 		list[i] = {"account":temp[0],"password":temp[1],"account_type":temp[2]};
  	}
- 	console.log(list);
+ 	return list;
 
  }
 
